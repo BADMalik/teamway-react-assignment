@@ -1,17 +1,30 @@
-import React, { useContext, useState } from "react";
-import { useNavigate, useNavigation } from "react-router-dom";
-import { AppContext } from "../Providers/contextProvider";
-import { userActions } from "../actions/questionActions";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useAppContext } from "../../Providers/contextProvider";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { userActions } from "../../actions/questionActions";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+
+const schema = yup.object({
+  userName: yup
+    .string()
+    .required()
+    .matches(/^[A-Za-z]+$/, "Only alphabets are allowed"),
+});
 
 export default function Home() {
-  const { contextValue, setContextValue } = useContext(AppContext);
+  const { setContextValue } = useAppContext();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
+
   const navigate = useNavigate();
-  const [userName, setUserName] = useState("");
-  const onChange = (e) => {
-    setUserName(e.target.value);
-  };
-  const onSubmit = (e) => {
-    e.preventDefault(e);
+
+  const onSubmit = (data) => {
+    const { userName } = data;
     setContextValue({
       type: userActions.SET_USER,
       payload: userName,
@@ -20,7 +33,7 @@ export default function Home() {
   };
   return (
     <div className="flex items-center justify-center font-sans text-4xl h-screen">
-      <form className="w-1/3 mx-auto" onSubmit={onSubmit}>
+      <form className="w-1/3 mx-auto" onSubmit={handleSubmit(onSubmit)}>
         <label
           htmlFor="website-admin"
           className="block mb-2 text-sm font-medium text-gray-900"
@@ -40,14 +53,15 @@ export default function Home() {
             </svg>
           </span>
           <input
+            {...register("userName")}
             type="text"
-            value={userName}
-            onChange={onChange}
-            id="website-admin"
             className="rounded-none w-1/2 rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 text-sm p-2.5  "
             placeholder="Enter Username"
           />
         </div>
+        <span className="text-sm text-red-400">
+          {errors?.userName?.message}
+        </span>
       </form>
     </div>
   );

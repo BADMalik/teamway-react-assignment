@@ -1,7 +1,6 @@
 import { data } from "../DB/initDB";
 
 export const questionActionEnums = {
-  START_TEST: "START_TEST",
   PREVIOUS_QUESTION: "PREVIOUS_QUESTION",
   NEXT_QUESTION: "NEXT_QUESTION",
   ANSWER_QUESTION: "ANSWER_QUESTION",
@@ -10,19 +9,18 @@ export const questionActionEnums = {
 };
 
 export const testStatus = {
-  STARTED: "STARTED",
   READY_TO_SUBMIT: "READY_TO_SUBMIT",
   COMPLETED: "COMPLETED",
+  IN_PROGRESS: "IN_PROGRESS"
 };
 
 export const userActions = {
   SET_USER: "SET_USER",
-  DELETE_USER: "DELETE_USER",
 };
 
 export const initialContextState = {
   questions: data,
   currentIndex: 0,
   userName: null,
-  testStatus: testStatus.STARTED,
+  testStatus: testStatus.IN_PROGRESS,
 };

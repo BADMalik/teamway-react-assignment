@@ -1,11 +1,10 @@
-import { useContext, useEffect } from "react";
 import { redirect } from "react-router-dom";
 
 import { ValidateAuthState } from "../../utils/auth/validateRoute";
 import { ROOT } from "../constant/ROUTE";
-import { AppContext } from "../../Providers/contextProvider";
+import { useAppContext } from "../../Providers/contextProvider";
 const Page = ({ route }) => {
-  const { contextValue } = useContext(AppContext);
+  const { contextValue } = useAppContext();
 
   useEffect(() => {
     document.title = route?.meta?.title

@@ -1,29 +1,29 @@
 [
   {
     "id": 1,
-    "text": "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
+    "text": "People dont respect your boundries : ",
     "options": [
       {
         "value": "A",
-        "content": "Don’t dare to interrupt them",
+        "content": "You protest",
         "extroWeight": 3,
         "introWeight": 0
       },
       {
         "value": "B",
-        "content": "Think it’s more important to give them some of your time; work can wait",
+        "content": "Stay passive aggressive",
         "extroWeight": 2,
         "introWeight": 1
       },
       {
         "value": "C",
-        "content": "Listen, but with only with half an ear",
+        "content": "Listen ",
         "extroWeight": 1,
         "introWeight": 2
       },
       {
         "value": "D",
-        "content": "Interrupt and explain that you are really busy at the moment",
+        "content": "Interrupt and over explain yourself",
         "extroWeight": 0,
         "introWeight": 3
       }
@@ -31,29 +31,29 @@
   },
   {
     "id": 2,
-    "text": "You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:",
+    "text": "You didnt like your burger",
     "options": [
       {
         "value": "A",
-        "content": "Look at your watch every two minutes",
+        "content": "Get irritated.",
         "extroWeight": 3,
         "introWeight": 0
       },
       {
         "value": "B",
-        "content": "Bubble with inner anger, but keep quiet",
+        "content": "Stay quiet",
         "extroWeight": 2,
         "introWeight": 1
       },
       {
         "value": "C",
-        "content": "Explain to other equally impatient people in the room that the doctor is always running late",
+        "content": "Question your choices",
         "extroWeight": 1,
         "introWeight": 2
       },
       {
         "value": "D",
-        "content": "Complain in a loud voice, while tapping your foot impatiently",
+        "content": "Just go with the flow",
         "extroWeight": 0,
         "introWeight": 3
       }
@@ -61,29 +61,29 @@
   },
   {
     "id": 3,
-    "text": "You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:",
+    "text": "you are sleepy but kids are noisy",
     "options": [
       {
         "value": "A",
-        "content": "Don’t dare contradict them",
+        "content": "You shut them up",
         "extroWeight": 3,
         "introWeight": 0
       },
       {
         "value": "B",
-        "content": "Think that they are obviously right",
+        "content": "You try to adjust",
         "extroWeight": 2,
         "introWeight": 1
       },
       {
         "value": "C",
-        "content": "Defend your own point of view, tooth and nail",
+        "content": "You go to the other room",
         "extroWeight": 1,
         "introWeight": 2
       },
       {
         "value": "D",
-        "content": "Continuously interrupt your colleague",
+        "content": "You dont do anything",
         "extroWeight": 0,
         "introWeight": 3
       }
@@ -91,29 +91,29 @@
   },
   {
     "id": 4,
-    "text": "You are taking part in a guided tour of a museum. You:",
+    "text": "Over burdened at work",
     "options": [
       {
         "value": "A",
-        "content": "Are a bit too far towards the back so don’t really hear what the guide is saying",
+        "content": "Inform your manager",
         "extroWeight": 3,
         "introWeight": 0
       },
       {
         "value": "B",
-        "content": "Follow the group without question",
+        "content": "Do overtime",
         "extroWeight": 2,
         "introWeight": 1
       },
       {
         "value": "C",
-        "content": "Make sure that everyone is able to hear properly",
+        "content": "Ask for help",
         "extroWeight": 1,
         "introWeight": 2
       },
       {
         "value": "D",
-        "content": "Are right up the front, adding your own comments in a loud voice",
+        "content": "Do every thing yourself",
         "extroWeight": 0,
         "introWeight": 3
       }
@@ -121,29 +121,29 @@
   },
   {
     "id": 5,
-    "text": "During dinner parties at your home, you have a hard time with people who:",
+    "text": "Food is not cooked nicely",
     "options": [
       {
         "value": "A",
-        "content": "Ask you to tell a story in front of everyone else",
+        "content": "You bluntly say",
         "extroWeight": 3,
         "introWeight": 0
       },
       {
         "value": "B",
-        "content": "Talk privately between themselves",
+        "content": "You mentions it later",
         "extroWeight": 2,
         "introWeight": 1
       },
       {
         "value": "C",
-        "content": "Hang around you all evening",
+        "content": "You add extra spices",
         "extroWeight": 1,
         "introWeight": 2
       },
       {
         "value": "D",
-        "content": "Always drag the conversation back to themselves",
+        "content": "You eat it quietly",
         "extroWeight": 0,
         "introWeight": 3
       }

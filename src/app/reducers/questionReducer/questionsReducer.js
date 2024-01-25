@@ -2,30 +2,29 @@ import {
   initialContextState,
   questionActionEnums,
   userActions,
+  testStatus,
 } from "../../actions/questionActions";
 
 export const questionReducer = (state, action) => {
   switch (action.type) {
-    case questionActionEnums.START_TEST:
-      return { ...initialContextState, questions: action.questions };
     case questionActionEnums.PREVIOUS_QUESTION:
       return { ...state, currentIndex: state.currentIndex - 1 };
     case questionActionEnums.NEXT_QUESTION:
       return { ...state, currentIndex: state.currentIndex + 1 };
     case questionActionEnums.ANSWER_QUESTION:
-      const questions = state.questions.map((question) =>
-        question.index === state.currentIndex
-          ? { ...question, answer: action.answer }
+      const updatedQuestions = state.questions.map((question, index) =>
+        index == state.currentIndex
+          ? { ...question, selection: action?.selection }
           : question
       );
       return {
         ...state,
-        questions,
-        testStatus: questions.some((question) => !question.answer)
-          ? testStatus.RUNNING
-          : testStatus.READY_TO_SUBMIT,
+        questions: updatedQuestions,
+        testStatus: updatedQuestions.every((question) => question.selection)
+          ? testStatus.READY_TO_SUBMIT
+          : testStatus.IN_PROGRESS,
       };
-    case questionActionEnums.SUBMIT_TEST:
+    case questionActionEnums.x:
       return { ...state, testStatus: testStatus.COMPLETED };
     case questionActionEnums.CLEAR_TEST:
       return initialContextState;

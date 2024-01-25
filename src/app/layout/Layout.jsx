@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import Navbar from "../components/Navbar/Navbar";
-const Layout = ({ children, props }) => {
+import React from "react";
+import Navbar from "../components/navBar";
+const Layout = ({ children }) => {
   return (
     <>
       {<Navbar />}
