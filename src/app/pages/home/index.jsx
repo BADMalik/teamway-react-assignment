@@ -33,7 +33,11 @@ export default function Home() {
   };
   return (
     <div className="flex items-center justify-center font-sans text-4xl h-screen">
-      <form className="w-1/3 mx-auto" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        aria-label="form"
+        className="w-1/3 mx-auto"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <label
           htmlFor="website-admin"
           className="block mb-2 text-sm font-medium text-gray-900"
