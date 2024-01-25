@@ -10,7 +10,7 @@ export const questionActionEnums = {
 };
 
 export const testStatus = {
-  RUNNING: "RUNNING",
+  STARTED: "STARTED",
   READY_TO_SUBMIT: "READY_TO_SUBMIT",
   COMPLETED: "COMPLETED",
 };
@@ -24,5 +24,5 @@ export const initialContextState = {
   questions: data,
   currentIndex: 0,
   userName: null,
-  testStatus: testStatus.RUNNING,
+  testStatus: testStatus.STARTED,
 };

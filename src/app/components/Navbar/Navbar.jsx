@@ -7,14 +7,6 @@ export default function Navbar() {
         <a href="#" className="text-white text-lg font-semibold">
           Personality Test
         </a>
-
-        <ul className="flex space-x-4">
-          <li>
-            <a href="#" className="text-white hover:text-gray-300">
-              logout
-            </a>
-          </li>
-        </ul>
       </div>
     </nav>
   );
