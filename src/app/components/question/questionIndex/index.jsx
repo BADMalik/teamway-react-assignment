@@ -6,9 +6,9 @@ export default function QuestionIndex() {
 
   return (
     <div className="flex items-center">
-      <div className="pl-4 mr-auto uppercase text-teal-400 text-1xl font-semibold underline italic">{`QUESTION ${
+      <div className="pl-4 mr-auto uppercase text-teal-400 text-1xl font-semibold underline italic">{`Question ${
         contextValue.currentIndex + 1
-      }/${contextValue.questions.length}`}</div>
+      } of ${contextValue.questions.length}`}</div>
     </div>
   );
 }

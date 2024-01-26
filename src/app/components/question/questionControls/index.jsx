@@ -29,6 +29,7 @@ export default function QuestionControls() {
     <div className="flex items-center justify-between p-4 pt-4">
       <div className="group">
         <button
+          aria-label="previous"
           disabled={previousDisabled}
           onClick={handlePrevious}
           className={`mr-2 text-gray-400 bg-transparent py-2 px-5 ${
@@ -39,6 +40,7 @@ export default function QuestionControls() {
           Previous
         </button>
         <button
+          aria-label="next"
           onClick={handleNext}
           disabled={disableNext}
           className={`mr-2 ml-2 ${
@@ -49,6 +51,7 @@ export default function QuestionControls() {
         </button>
       </div>
       <button
+        aria-label="submit"
         disabled={!enableSubmit}
         onClick={handleFormSubmit}
         className={` bg-gray-300 py-2 px-5 rounded shadow-md ${

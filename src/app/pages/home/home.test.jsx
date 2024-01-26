@@ -1,12 +1,12 @@
 import React from "react";
-import { render, fireEvent, waitFor } from "@testing-library/react";
+import { render, fireEvent, waitFor, act } from "@testing-library/react";
 import { screen } from "@testing-library/dom";
 import Home from ".";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import Navbar from "../../components/navBar";
 import { AppContext } from "../../providers/contextProvider";
-
+global.window = { location: { pathname: null } };
 /**
  * Mock Navigate
  */
@@ -53,7 +53,6 @@ describe("Home Component", () => {
 
     await user.type(input, "newvalue");
     const form = screen.getByRole("form");
-
     await waitFor(() => fireEvent.submit(form));
 
     expect(mockUsedNavigate).toHaveBeenCalledWith("/test-screen");

@@ -28,10 +28,14 @@ export default function Result() {
 
   return (
     <>
-      <div className=" w-full flex ">
+      <div className=" w-full text-center">
         <div>Your Personality is {getTestResult()}</div>
       </div>
-      <button onClick={reset} className="py-2 px-5 text-sky-500">
+      <button
+        onClick={reset}
+        aria-label="reset"
+        className="py-2 px-5 text-sky-500"
+      >
         Submit
       </button>
     </>

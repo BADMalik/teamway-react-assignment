@@ -23,15 +23,18 @@ export default function QuestionStatement() {
             <li key={option.content} className="w-full ">
               <div className="flex items-center ps-3">
                 <input
+                  role="radio"
                   name="selected"
                   type="radio"
+                  id={option.value}
+                  aria-checked={currentQuestion?.selection === option.value}
                   onChange={() => handleSelection(option.value)}
                   value={option.value || ""}
                   checked={currentQuestion?.selection === option.value}
                   className="w-4 h-4 text-start text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />
                 <label
-                  htmlFor={option.content}
+                  htmlFor={option.value}
                   className=" py-3 ms-2 text-sm font-medium text-black "
                 >
                   {option.content}

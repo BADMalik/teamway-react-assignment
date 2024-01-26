@@ -25,7 +25,7 @@ const TestScreen = () => {
         <h2 className="text-5xl text-teal-400">
           See if you are an extrovert or introvert?
         </h2>
-        <div className="w-4/5 flex flex-col items-center justify-center mx-auto">
+        <div className="w-[100%]  max-w-[700px] min-w-[700px] mx-auto">
           <div className="py-4  px-6 my-6 mx-auto bg-white  shadow-md rounded">
             {showRelevantScreen()}
           </div>

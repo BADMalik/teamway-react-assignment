@@ -1,7 +1,5 @@
 import { useReducer } from "react";
 import "./App.css";
-import getRouteConfigs from "./app/router/config/base.route";
-import generateRoutesFromConfig from "./app/router/utils/generateRoutesFromConfig";
 import Layout from "./app/layout/Layout";
 import Home from "./app/pages/home";
 import { Route, Routes } from "react-router-dom";
