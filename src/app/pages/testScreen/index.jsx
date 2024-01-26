@@ -1,6 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../Providers/contextProvider";
-import { ROOT } from "../../router/constant/ROUTE";
+import { useAppContext } from "../../providers/contextProvider";
 import { testStatus } from "../../actions/questionActions";
 import QuestionComponent from "../../components/question";
 import Result from "../../components/result";

@@ -24,7 +24,7 @@ export const questionReducer = (state, action) => {
           ? testStatus.READY_TO_SUBMIT
           : testStatus.IN_PROGRESS,
       };
-    case questionActionEnums.x:
+    case questionActionEnums.SUBMIT_TEST:
       return { ...state, testStatus: testStatus.COMPLETED };
     case questionActionEnums.CLEAR_TEST:
       return initialContextState;

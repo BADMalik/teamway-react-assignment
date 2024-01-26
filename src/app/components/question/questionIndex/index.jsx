@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useAppContext } from "../../../Providers/contextProvider";
+import { useAppContext } from "../../../providers/contextProvider";
 
 export default function QuestionIndex() {
   const { contextValue } = useAppContext();

@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { useAppContext } from "../Providers/contextProvider";
+import { useAppContext } from "../providers/contextProvider";
 import { useEffect } from "react";
 
 const PrivateRoutes = () => {

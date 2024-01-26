@@ -5,7 +5,7 @@ import generateRoutesFromConfig from "./app/router/utils/generateRoutesFromConfi
 import Layout from "./app/layout/Layout";
 import Home from "./app/pages/home";
 import { Route, Routes } from "react-router-dom";
-import { AppContext } from "./app/Providers/contextProvider";
+import { AppContext } from "./app/providers/contextProvider";
 import { initialContextState } from "./app/actions/questionActions";
 import { questionReducer } from "./app/reducers/questionReducer/questionsReducer";
 import TestScreen from "./app/pages/testScreen";

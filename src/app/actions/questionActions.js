@@ -1,4 +1,4 @@
-import { data } from "../DB/initDB";
+import { data } from "../db/initDB";
 
 export const questionActionEnums = {
   PREVIOUS_QUESTION: "PREVIOUS_QUESTION",

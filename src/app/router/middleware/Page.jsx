@@ -2,7 +2,7 @@ import { redirect } from "react-router-dom";
 
 import { ValidateAuthState } from "../../utils/auth/validateRoute";
 import { ROOT } from "../constant/ROUTE";
-import { useAppContext } from "../../Providers/contextProvider";
+import { useAppContext } from "../../providers/contextProvider";
 const Page = ({ route }) => {
   const { contextValue } = useAppContext();
 

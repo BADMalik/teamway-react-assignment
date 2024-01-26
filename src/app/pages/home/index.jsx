@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useAppContext } from "../../Providers/contextProvider";
+import { useAppContext } from "../../providers/contextProvider";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { userActions } from "../../actions/questionActions";
 import { useForm } from "react-hook-form";

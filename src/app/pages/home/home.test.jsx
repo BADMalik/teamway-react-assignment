@@ -5,7 +5,7 @@ import Home from ".";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import Navbar from "../../components/navBar";
-import { AppContext } from "../../Providers/contextProvider";
+import { AppContext } from "../../providers/contextProvider";
 
 /**
  * Mock Navigate

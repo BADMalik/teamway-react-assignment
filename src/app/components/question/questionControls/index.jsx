@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../../Providers/contextProvider";
+import { useAppContext } from "../../../providers/contextProvider";
 import {
   questionActionEnums,
   testStatus,
@@ -13,13 +13,18 @@ export default function QuestionControls() {
 
   const handleNext = () =>
     setContextValue({ type: questionActionEnums.NEXT_QUESTION });
+
   const handleFormSubmit = () =>
     setContextValue({ type: questionActionEnums.SUBMIT_TEST });
+
   const previousDisabled = contextValue?.currentIndex === 0;
+
   const disableNext =
     contextValue?.currentIndex + 1 === contextValue?.questions.length ||
     !contextValue?.questions?.[contextValue?.currentIndex]?.selection;
+
   const enableSubmit = contextValue?.testStatus === testStatus.READY_TO_SUBMIT;
+
   return (
     <div className="flex items-center justify-between p-4 pt-4">
       <div className="group">

@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../Providers/contextProvider";
+import { useAppContext } from "../../providers/contextProvider";
 import { questionActionEnums } from "../../actions/questionActions";
 import { useNavigate } from "react-router-dom";
 
