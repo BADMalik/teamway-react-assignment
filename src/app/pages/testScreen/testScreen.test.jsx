@@ -3,13 +3,13 @@ import { render, fireEvent, waitFor } from "@testing-library/react";
 import { screen } from "@testing-library/dom";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
-import { AppContext } from "../../../providers/contextProvider";
-import QuestionIndex from ".";
-import { data } from "../../../db/initDB";
-import QuestionStatement from "../questionStatement";
-import QuestionControls from "../questionControls";
-import { testStatus } from "../../../actions/questionActions";
-import Result from "../../result";
+import { AppContext } from "../../providers/contextProvider";
+import QuestionIndex from "../../components/question/questionIndex";
+import { data } from "../../db/initDB";
+import QuestionStatement from "../../components/question/questionStatement";
+import QuestionControls from "../../components/question/questionControls";
+import { testStatus } from "../../actions/questionActions";
+import Result from "../../components/result";
 
 const mockUsedNavigate = jest.fn();
 
